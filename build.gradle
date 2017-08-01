@@ -1,0 +1,17 @@
+allprojects {
+    repositories {
+        jcenter()
+        }
+}
+
+apply plugin: 'java'
+
+dependencies {
+	compile 'org.javassist:javassist:3.21.0-GA'
+	compile 'com.fasterxml.jackson.core:jackson-annotations:2.8.5'
+	testCompile 'junit:junit:4.12'
+	compile 'com.fasterxml.jackson.core:jackson-databind:2.8.5'
+	compile 'com.google.code.gson:gson:2.2.4'
+	compile 'org.openjdk.jmh:jmh-core:1.17.3'
+	compile 'org.openjdk.jmh:jmh-generator-annprocess:1.17.3'
+}
